@@ -7,7 +7,7 @@ const path  = require('path')
 const server  = http.createServer(app)
 const io = new Server(server , {
     cors:{
-        origin:"*"
+        origin:"http://13.201.2.106:3000"
     }
 })
 
