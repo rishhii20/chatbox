@@ -6,7 +6,7 @@ import UserLogin from './UserLogin';
 import {
     doc,
     setDoc,
-    collection,
+    collection,loca
     serverTimestamp,
     query,
     onSnapshot,
@@ -18,7 +18,7 @@ import {
 
 export default function ChatContainer() {
   
-    let socketio  = socketIOClient("http://13.201.2.106:5001")
+    let socketio  = socketIOClient("http://localhost:5001")
     const [chats , setChats] = useState([])
     const [user, setUser] = useState(localStorage.getItem("user"))
     const avatar = localStorage.getItem('avatar')
